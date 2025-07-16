@@ -16,7 +16,6 @@ class Solution:
                 l += 1
             if (s1Dict == s2Dict):
                 return True
-        return False
         
 
         # abc 
