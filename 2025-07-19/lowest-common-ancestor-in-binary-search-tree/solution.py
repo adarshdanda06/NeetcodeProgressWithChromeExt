@@ -13,7 +13,7 @@ class Solution:
             p, q = q, p
         def search(root):
             nonlocal res
-            if root.val == p.val or root.val == q.vak or (p.val <= root.val and q.val >= root.val):
+            if root.val == p.val or root.val == q.val or (p.val <= root.val and q.val >= root.val):
                 res = root
                 return
             if p.val < root.val and q.val < root.val:
