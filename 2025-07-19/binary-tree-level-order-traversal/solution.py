@@ -8,13 +8,13 @@
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         queue = [root]
-        res = [[root]]
+        res = [[root.val]]
         
         while queue:
             level = []
             for i in range(len(queue)):
                 node = queue.pop(0)
-                level.append(node)
+                level.append(node.val)
                 if node.left:
                     queue.append(node.left)
                 if node.right:
